@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuadrícula</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
+        .container { width: 80%; margin: auto; padding: 20px; display: grid; grid-template-areas: 
+            "header header"
+            "nav nav"
+            "aside section"
+            "footer footer"; 
+            gap: 10px;
+        }
+        header { grid-area: header; background: purple; padding: 20px; text-align: center; }
+        nav { grid-area: nav; background: purple; padding: 20px; text-align: center; }
+        aside { grid-area: aside; background: purple; padding: 20px; }
+        section { grid-area: section; background: purple; padding: 20px; }
+        footer { grid-area: footer; background: purple; padding: 20px; text-align: center; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>Encabezado</header>
+        <nav>Menú de Navegación</nav>
+        <aside>Barra Lateral</aside>
+        <section>Contenido Principal</section>
+        <footer>Pie de Página</footer>
+    </div>
+</body>
+</html>
